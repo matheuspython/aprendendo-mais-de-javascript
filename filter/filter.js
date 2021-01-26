@@ -17,3 +17,20 @@ const numerosFiltrados = numeros.filter((valor, indice, array) => {
 })
 
 console.log(numerosFiltrados)
+
+
+
+//novo exemplo de filter
+
+const pessoas = [
+    { nome: 'Luiz', idade: 14 },
+    { nome: 'Sara', idade: 23 },
+    { nome: 'João', idade: 44 },
+    { nome: 'Ricarda', idade: 84 },
+    { nome: 'Ricardo', idade: 4 }
+]
+const nomesComMaisDe5Letras = pessoas.filter((value, i) => {
+    return (value.nome.length > 5)
+})
+
+console.log(nomesComMaisDe5Letras)
